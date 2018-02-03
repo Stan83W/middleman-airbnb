@@ -5,3 +5,26 @@
 #profil-pic {
 	width: 80px;
 }
+.details {
+	display: flex;
+	align-items: center;
+	padding: 30px;
+	padding-left: 0;
+	h1 {
+		font-size: 18px;
+	}
+	p {
+		font-size: 12px;
+		color: #777777;
+	}
+	i {
+		color: #ffb400;
+	}
+}
+.user {
+	text-align: center;
+	padding: 20px;
+}
+.flat-desc h1, p {
+	margin-top: 0;
+}
