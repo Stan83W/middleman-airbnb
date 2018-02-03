@@ -7,7 +7,7 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="../stylesheets/application-d4aa887b.css" rel="stylesheet" />
+    <link href="../stylesheets/application-bfa38016.css" rel="stylesheet" />
     <script src="../javascripts/application-93de88c9.js"></script>
     <link href="../images/favicon-f15af148.png" rel="icon" type="image/png" />
   </head>
@@ -15,7 +15,7 @@
   <div class="navbar-wagon">
   <!-- Logo -->
   <a href="/" class="navbar-wagon-brand">
-    <img src="images/logo.png" alt="logo">
+    <img src="../images/logo-acc9c0ec.png" alt="logo">
   </a>
 
   <!-- Right Navigation -->
@@ -50,12 +50,55 @@
     </div>
   </div>
 </div>
-    
-<!-- Inject flat data in template -->
-<img src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard" class="img-circle" alt="Monsieurpaillard" />
-<p>Romain's home</p>
-<h1>Nice flat in Piccadilly</h1>
-<p>London, UK</p>
+    <!-- Inject flat data in template -->
+<div class="banner show" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://kitt.lewagon.com/placeholder/cities/london');">
+</div>
+<div class="header-flat">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 col-sm-offset-1">
+				<div class="details">
+					<div class="user">
+						<img src="https://kitt.lewagon.com/placeholder/users/monsieurpaillard" class="img-circle" id="profil-pic" alt="Monsieurpaillard" />
+						<p>Romain</p>			
+					</div>
+						<div class="flat-desc">
+							<h1>Nice flat in Piccadilly</h1>
+							<p>London, UK</p>
+							<p class="rating">
+								5
+								<i class="fa fa-star"></i>
+							</p>
+						</div>
+				</div>	
+			</div>
+			<div class="col-xs-12 col-sm-4 flat-form">
+				<form action="#">
+					<h4>Book this flat</h4>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-xs-6">
+								<input type="text" class="form-control" placeholder="checkin" id="checkin">
+							</div>
+							<div class="col-xs-6">
+								<input type="text" class="form-control" placeholder="checkout" id="checkout">
+							</div>
+						</div>
+						<select class="form-control" id="selector">
+						  <option value="1">1 gest</option>
+						  <option value="2">2 gests</option>
+						  <option value="3">3 gests</option>
+						</select>
+						<input type="submit" class="btn btn-danger" value="Book it">
+					</div>
+
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
   <div class="footer">
   <div class="footer-links">
     <a href="#"><i class="fa fa-github"></i></a>
