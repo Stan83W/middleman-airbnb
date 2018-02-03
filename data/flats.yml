@@ -1,5 +1,6 @@
 ssaunier:
   name: "Sebastien's home"
+  user_name: "Sebastien"
   description: "Charming room in Montmartre"
   city_name: "Paris, France"
   city_slug: "paris"
@@ -7,14 +8,16 @@ ssaunier:
   rating: 4
 papillard:
   name: "Boris' home"
-  description: Small flat in Tokyo
+  user_name: "Boris"
+  description: "Small flat in Tokyo"
   city_name: "Tokyo, Japan"
   city_slug: "tokyo"
   wifi: true
   rating: 3
 monsieurpaillard:
-  name: Romain's home
-  description: Nice flat in Piccadilly
+  name: "Romain's home"
+  user_name: "Romain"
+  description: "Nice flat in Piccadilly"
   city_name: "London, UK"
   city_slug: "london"
   wifi: true
