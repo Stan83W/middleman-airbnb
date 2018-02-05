@@ -15,8 +15,9 @@
 							<h1><%= flat.description %></h1>
 							<p><%= flat.city_name %></p>
 							<p class="rating">
-								<%= flat.rating %>
-								<i class="fa fa-star"></i>
+								<% data.flats.each do |owner, flat| %>
+									<i class="fa fa-star"></i>
+								<% end %>
 							</p>
 						</div>
 				</div>	
