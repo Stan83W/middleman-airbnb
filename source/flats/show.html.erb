@@ -1,4 +1,5 @@
 <% flat = data.flats[owner] %>
+<% rating = data.flats[rating] %>
 <!-- Inject flat data in template -->
 <div class="banner show" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');">
 </div>
@@ -15,8 +16,15 @@
 							<h1><%= flat.description %></h1>
 							<p><%= flat.city_name %></p>
 							<p class="rating">
-								<% data.flats.each do |owner, flat| %>
+<!-- 								<% flat.rating.to_i.times do |star| %>
 									<i class="fa fa-star"></i>
+								<% end %> -->
+								<% for i in 1..5 do %>
+								  <% if flat.rating.to_i > i-1 %>
+								    <i class='fa fa-star' style='color: #ffb400'></i>
+									<% else  %>
+								    <i class='fa fa-star' style='color: #cacccd'></i>
+								  <% end %>
 								<% end %>
 							</p>
 						</div>
